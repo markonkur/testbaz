@@ -25,5 +25,11 @@ public class TestBazy {
             e.printStackTrace();
         }
 
+        //test wątków
+        for (int i = 0; i < 10; i++) {
+            CountingThread ct = new CountingThread();
+            ct.start();
+        }
+
     }
 }
